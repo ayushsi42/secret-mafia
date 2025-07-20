@@ -8,11 +8,17 @@ from agent import LLMAgent
 
 # initialize the agents
 agents = {
-    0: LLMAgent(model_name="gpt-4"),
-    1: ta.agents.OpenRouterAgent(model_name="google/gemini-pro"),
+    0: LLMAgent(model_name="HuggingFaceTB/SmolLM-1.7B" ,quantize=True, device="auto"),
+    1: LLMAgent(model_name="HuggingFaceTB/SmolLM-1.7B" ,quantize=True, device="auto"),
+    2: LLMAgent(model_name="HuggingFaceTB/SmolLM-1.7B" ,quantize=True, device="auto"),
+    3: LLMAgent(model_name="HuggingFaceTB/SmolLM-1.7B" ,quantize=True, device="auto"),
+    4: LLMAgent(model_name="HuggingFaceTB/SmolLM-1.7B" ,quantize=True, device="auto"),
+    5: LLMAgent(model_name="HuggingFaceTB/SmolLM-1.7B" ,quantize=True, device="auto"),
+    6: LLMAgent(model_name="HuggingFaceTB/SmolLM-1.7B" ,quantize=True, device="auto"),
+    7: LLMAgent(model_name="HuggingFaceTB/SmolLM-1.7B" ,quantize=True, device="auto"),
+    8: LLMAgent(model_name="HuggingFaceTB/SmolLM-1.7B" ,quantize=True, device="auto"),
 }
 
-# initialize the environment
 env = ta.make(env_id="SecretMafia-v0")
 env.reset(num_players=len(agents))
 

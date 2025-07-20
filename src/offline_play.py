@@ -1,0 +1,27 @@
+"""
+This script allows you to play against a fixed model.
+You (human player) will be player 0, and the AI model will be player 1.
+"""
+
+import textarena as ta 
+from agent import LLMAgent
+
+# initialize the agents
+agents = {
+    0: LLMAgent(model_name="gpt-4"),
+    1: ta.agents.OpenRouterAgent(model_name="google/gemini-pro"),
+}
+
+# initialize the environment
+env = ta.make(env_id="SecretMafia-v0")
+env.reset(num_players=len(agents))
+
+done = False 
+while not done:
+  player_id, observation = env.get_observation()
+  action = agents[player_id](observation)
+  done, step_info = env.step(action=action)
+rewards, game_info = env.close()
+
+print(f"Rewards: {rewards}")
+print(f"Game Info: {game_info}")

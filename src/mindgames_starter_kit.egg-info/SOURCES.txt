@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/agent.py
+src/offline_evaluation.py
+src/offline_play.py
+src/online_play_track1.py
+src/mindgames_starter_kit.egg-info/PKG-INFO
+src/mindgames_starter_kit.egg-info/SOURCES.txt
+src/mindgames_starter_kit.egg-info/dependency_links.txt
+src/mindgames_starter_kit.egg-info/requires.txt
+src/mindgames_starter_kit.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+[project]
+name = "mindgames-starter-kit"
+version = "0.1.0"
+description = "A starter kit for the Mind Games Challenge."
+requires-python = ">=3.12"
+dependencies = [
+    "textarena",
+    "transformers",
+    "torch",
+    "accelerate>=1.9.0",
+] 

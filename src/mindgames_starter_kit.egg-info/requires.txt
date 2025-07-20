@@ -1,0 +1,4 @@
+textarena
+transformers
+torch
+accelerate>=1.9.0

@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: mindgames-starter-kit
+Version: 0.1.0
+Summary: A starter kit for the Mind Games Challenge.
+Requires-Python: >=3.12
+Requires-Dist: textarena
+Requires-Dist: transformers
+Requires-Dist: torch
+Requires-Dist: accelerate>=1.9.0
